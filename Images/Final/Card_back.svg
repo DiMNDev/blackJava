@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 120 190" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<metadata>
+<vectornator:setting key="IsTimeLapseWatermarkDisabled" value="false"/>
+<vectornator:setting key="UndoHistoryDisabled" value="true"/>
+<vectornator:setting key="VNDimensionsVisible" value="true"/>
+<vectornator:setting key="VNSnapToGuides" value="true"/>
+<vectornator:setting key="WDCMYKEnabledKey" value="false"/>
+<vectornator:setting key="WDDisplayWhiteBackground" value="false"/>
+<vectornator:setting key="WDDynamicGuides" value="true"/>
+<vectornator:setting key="WDGuidesVisible" value="true"/>
+<vectornator:setting key="WDIsolateActiveLayer" value="false"/>
+<vectornator:setting key="WDOutlineMode" value="false"/>
+<vectornator:setting key="WDRulersVisible" value="true"/>
+<vectornator:setting key="WDSnapToEdges" value="true"/>
+<vectornator:setting key="WDSnapToGrid" value="false"/>
+<vectornator:setting key="WDSnapToPoints" value="true"/>
+<vectornator:setting key="WDUnits" value="Pixels"/>
+</metadata>
+<defs>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="516.995" id="Filter" width="316.812" x="0" y="0">
+<feDropShadow dx="-3.6732e-05" dy="10" flood-color="#020202" flood-opacity="0.408967" height="516.995" stdDeviation="5" width="316.812"/>
+</filter>
+<clipPath id="TextBounds">
+<rect height="22.8068" width="21.9204" x="19.522" y="13.0715"/>
+</clipPath>
+<clipPath id="TextBounds_2">
+<rect height="22.8366" width="21.9514" x="79.1576" y="142.805"/>
+</clipPath>
+<clipPath id="TextBounds_3">
+<rect height="22.8068" width="21.9204" x="19.522" y="13.0715"/>
+</clipPath>
+<clipPath id="TextBounds_4">
+<rect height="22.8366" width="21.9514" x="79.1576" y="142.805"/>
+</clipPath>
+</defs>
+<g id="Layer-1" vectornator:layerName="Layer 1" visibility="hidden">
+<path d="M-30.8559-55.315L165.333-55.315L165.333 214.767L-30.8559 214.767L-30.8559-55.315Z" fill="#ffffff" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+</g>
+<g id="Card" vectornator:layerName="Card">
+<path d="M26.2161 7.01179L95.1533 7.01179C103.438 7.01179 110.153 14.342 110.153 23.3842L110.153 156.304C110.153 165.347 103.438 172.677 95.1533 172.677L26.2161 172.677C17.9319 172.677 11.2161 165.347 11.2161 156.304L11.2161 23.3842C11.2161 14.342 17.9319 7.01179 26.2161 7.01179Z" fill="#ececec" fill-rule="evenodd" filter="url(#Filter)" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.17188" vectornator:shadowAngle="1.5708" vectornator:shadowColor="#020202" vectornator:shadowOffset="10" vectornator:shadowOpacity="0.408967" vectornator:shadowRadius="10"/>
+</g>
+<g id="Checker-back" vectornator:layerName="Checker-back">
+<path d="M23.1847 7.01179L38.1847 7.01179L38.1847 22.0118L23.1847 22.0118L23.1847 7.01179Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M11.4035 22.0005C11.3492 24.8676 11.2166 29.0779 11.216 29.0943C11.0748 33.0394 11.0333 34.847 11.0285 37.0005L23.1847 37.0005L23.1847 22.0005L11.4035 22.0005Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M11.0285 52.0005C11.032 54.4816 11.1007 56.5139 11.2785 61.1568C11.3891 64.0455 11.3758 65.3191 11.4035 67.0005L23.1847 67.0005L23.1847 52.0005L11.0285 52.0005Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M11.2472 82.0005C11.2442 84.3533 11.1827 92.3917 11.1535 97.0005L23.1847 97.0005L23.1847 82.0005L11.2472 82.0005Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M11.841 112.001C11.817 113.983 11.7953 115.684 11.6222 119.313C11.572 120.366 11.5547 120.827 11.5285 121.407C11.4247 123.703 11.3909 125.332 11.3722 127.001L23.1847 127.001L23.1847 112.001L11.841 112.001Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M23.3399 127.012L38.3399 127.012L38.3399 142.012L23.3399 142.012L23.3399 127.012Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M10.8722 142.001C10.8889 143.213 10.9052 144.325 10.966 145.844C10.9965 146.608 11.0295 147.235 11.091 148.626C11.2749 152.788 11.3289 154.704 11.341 157.001L23.1847 157.001L23.1847 142.001L10.8722 142.001Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M23.1847 157.012L38.1847 157.012L38.1847 172.012L23.1847 172.012L23.1847 157.012Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M23.1847 97.0118L38.1847 97.0118L38.1847 112.012L23.1847 112.012L23.1847 97.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M53.1847 7.01179L68.1847 7.01179L68.1847 22.0118L53.1847 22.0118L53.1847 7.01179Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M38.1847 22.0118L53.1847 22.0118L53.1847 37.0118L38.1847 37.0118L38.1847 22.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M23.4335 37.0118L38.4335 37.0118L38.4335 52.0118L23.4335 52.0118L23.4335 37.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M38.1847 52.0118L53.1847 52.0118L53.1847 67.0118L38.1847 67.0118L38.1847 52.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M38.1847 82.0118L53.1847 82.0118L53.1847 97.0118L38.1847 97.0118L38.1847 82.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M38.1847 112.012L53.1847 112.012L53.1847 127.012L38.1847 127.012L38.1847 112.012Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M53.3399 127.012L68.3399 127.012L68.3399 142.012L53.3399 142.012L53.3399 127.012Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M38.1847 142.012L53.1847 142.012L53.1847 157.012L38.1847 157.012L38.1847 142.012Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M53.1847 157.012L68.1847 157.012L68.1847 172.012L53.1847 172.012L53.1847 157.012Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M53.1847 97.0118L68.1847 97.0118L68.1847 112.012L53.1847 112.012L53.1847 97.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M22.6798 67.0118L37.6798 67.0118L37.6798 82.0118L22.6798 82.0118L22.6798 67.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M23.1847 67.0118L38.1847 67.0118L38.1847 82.0118L23.1847 82.0118L23.1847 67.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M83.1847 7.01179L98.1847 7.01179L98.1847 22.0118L83.1847 22.0118L83.1847 7.01179Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M68.1847 22.0118L83.1847 22.0118L83.1847 37.0118L68.1847 37.0118L68.1847 22.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M53.4335 37.0118L68.4335 37.0118L68.4335 52.0118L53.4335 52.0118L53.4335 37.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M68.1847 52.0118L83.1847 52.0118L83.1847 67.0118L68.1847 67.0118L68.1847 52.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M68.1847 82.0118L83.1847 82.0118L83.1847 97.0118L68.1847 97.0118L68.1847 82.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M68.1847 112.012L83.1847 112.012L83.1847 127.012L68.1847 127.012L68.1847 112.012Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M83.3399 127.012L98.3399 127.012L98.3399 142.012L83.3399 142.012L83.3399 127.012Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M68.1847 142.012L83.1847 142.012L83.1847 157.012L68.1847 157.012L68.1847 142.012Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M83.1847 157.012L98.1847 157.012L98.1847 172.012L83.1847 172.012L83.1847 157.012Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M83.1847 97.0118L98.1847 97.0118L98.1847 112.012L83.1847 112.012L83.1847 97.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M52.6798 67.0118L67.6798 67.0118L67.6798 82.0118L52.6798 82.0118L52.6798 67.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M53.1847 67.0118L68.1847 67.0118L68.1847 82.0118L53.1847 82.0118L53.1847 67.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M98.1847 22.0005L98.1847 37.0005L109.622 37.0005C109.629 35.1868 109.625 33.6225 109.716 30.2818C109.825 26.241 109.872 24.4608 109.872 22.2505C109.872 22.1546 109.955 22.0936 109.966 22.0005L98.1847 22.0005Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M83.4335 37.0118L98.4335 37.0118L98.4335 52.0118L83.4335 52.0118L83.4335 37.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M98.1847 52.0005L98.1847 67.0005L109.747 67.0005C109.757 64.9208 109.764 63.1192 109.841 59.2818C109.915 55.6188 109.923 53.9491 109.935 52.0005L98.1847 52.0005Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M98.1847 82.0005L98.1847 97.0005L110.653 97.0005C110.014 91.8307 109.597 86.7689 109.591 82.0005L98.1847 82.0005Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M98.1847 112.001L98.1847 127.001L110.06 127.001C110.122 124.283 110.214 120.732 110.216 120.688C110.36 116.638 110.403 114.731 110.403 112.438C110.403 112.267 110.558 112.162 110.591 112.001L98.1847 112.001Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M98.1847 142.001L98.1847 157.001L110.403 157.001C110.381 155.817 110.383 154.771 110.341 153.313C110.318 152.513 110.292 151.868 110.247 150.469C110.111 146.167 110.098 144.253 110.091 142.001L98.1847 142.001Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M82.6798 67.0118L97.6798 67.0118L97.6798 82.0118L82.6798 82.0118L82.6798 67.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M83.1847 67.0118L98.1847 67.0118L98.1847 82.0118L83.1847 82.0118L83.1847 67.0118Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+</g>
+<g id="Red-Character" vectornator:layerName="Red-Character" visibility="hidden">
+<path clip-path="url(#TextBounds)" d="M26.779 20.6715L29.021 25.8585L24.651 25.8585L26.779 20.6715ZM20.547 31.2165L20.547 31.4825L24.138 31.4825L24.138 31.2165L22.447 31.2165L24.556 26.1245L29.116 26.1245L31.32 31.2165L29.553 31.2165L29.553 31.4825L35.937 31.4825L35.937 31.2165L34.303 31.2165L28.318 17.4225L27.805 17.4225L22.143 31.2165L20.547 31.2165Z" fill="#901010" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path clip-path="url(#TextBounds_2)" d="M93.8417 158.022L91.5926 152.838L95.9626 152.832L93.8417 158.022ZM100.059 147.468L100.059 147.202L96.468 147.207L96.4683 147.473L98.1593 147.471L96.0573 152.566L91.4973 152.572L89.2863 147.483L91.0533 147.48L91.053 147.214L84.669 147.223L84.6693 147.489L86.3033 147.487L92.3071 161.273L92.8201 161.272L98.4633 147.47L100.059 147.468Z" fill="#901010" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+</g>
+<g id="Black-Character" vectornator:layerName="Black-Character" visibility="hidden">
+<path clip-path="url(#TextBounds_3)" d="M26.779 20.6715L29.021 25.8585L24.651 25.8585L26.779 20.6715ZM20.547 31.2165L20.547 31.4825L24.138 31.4825L24.138 31.2165L22.447 31.2165L24.556 26.1245L29.116 26.1245L31.32 31.2165L29.553 31.2165L29.553 31.4825L35.937 31.4825L35.937 31.2165L34.303 31.2165L28.318 17.4225L27.805 17.4225L22.143 31.2165L20.547 31.2165Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path clip-path="url(#TextBounds_4)" d="M93.8417 158.022L91.5926 152.838L95.9626 152.832L93.8417 158.022ZM100.059 147.468L100.059 147.202L96.468 147.207L96.4683 147.473L98.1593 147.471L96.0573 152.566L91.4973 152.572L89.2863 147.483L91.0533 147.48L91.053 147.214L84.669 147.223L84.6693 147.489L86.3033 147.487L92.3071 161.273L92.8201 161.272L98.4633 147.47L100.059 147.468Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+</g>
+<g id="Hearts" vectornator:layerName="Hearts" visibility="hidden">
+<path d="M28.2152 36.542C28.2152 36.542 23.2724 32.7761 23.1476 36.7422C23.0227 40.7082 28.2702 44.5224 28.2702 44.5224C28.2702 44.5224 33.6947 39.7965 32.9626 36.2397C32.2305 32.6829 28.2152 36.542 28.2152 36.542Z" fill="#901010" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M91.465 140.997C91.465 140.997 96.4078 144.762 96.5326 140.796C96.6574 136.83 91.4099 133.016 91.4099 133.016C91.4099 133.016 85.9854 137.742 86.7176 141.299C87.4497 144.856 91.465 140.997 91.465 140.997Z" fill="#901010" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M61.2096 77.2335C61.2096 77.2335 40.8126 61.8451 40.2974 78.0516C39.7823 94.2582 61.4369 109.844 61.4369 109.844C61.4369 109.844 83.8219 90.5328 80.8006 75.9986C77.7793 61.4644 61.2096 77.2335 61.2096 77.2335Z" fill="#901010" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.532335"/>
+</g>
+<g id="Clubs" vectornator:layerName="Clubs" visibility="hidden">
+<path d="M26.5201 39.2174C23.6961 37.5545 22.4379 39.1979 22.6764 40.5012C23.1517 43.0985 27.297 40.7745 27.297 40.7745L25.8499 44.5224L30.5593 44.4827L28.5158 40.7928C28.5158 40.7928 32.9749 42.8952 33.0286 40.2167C33.0834 37.4839 31.9993 38.4982 29.4595 39.2357C27.8009 39.7174 33.5232 34.3271 27.7388 34.5279C22.804 34.6992 27.8459 39.9982 26.5201 39.2174Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.5"/>
+<path d="M55.2061 87.9321C44.3265 81.5255 39.4792 87.8569 40.3981 92.8781C42.2291 102.884 58.1994 93.9308 58.1994 93.9308L52.6244 108.37L70.7674 108.217L62.8949 94.0013C62.8949 94.0013 80.0739 102.101 80.2808 91.7821C80.4919 81.2536 76.3153 85.1612 66.5305 88.0027C60.1407 89.8583 82.1863 69.0919 59.9016 69.8653C40.8896 70.5252 60.314 90.94 55.2061 87.9321Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.5"/>
+<path d="M93.1601 138.321C95.9841 139.984 97.2423 138.341 97.0038 137.037C96.5285 134.44 92.3831 136.764 92.3831 136.764L93.8302 133.016L89.1209 133.056L91.1643 136.746C91.1643 136.746 86.7053 134.643 86.6516 137.322C86.5968 140.055 87.6809 139.04 90.2207 138.303C91.8792 137.821 86.157 143.211 91.9413 143.011C96.8762 142.839 91.8343 137.54 93.1601 138.321Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="0.5"/>
+</g>
+<g id="Diamonds" vectornator:layerName="Diamonds" visibility="hidden">
+<path d="M27.9912 34.3918L23.8989 39.5316L28.2365 44.6737L32.2771 39.881L27.9912 34.3918Z" fill="#901010" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M60.3082 69.8443L44.3878 89.8398L61.2625 109.844L76.9817 91.1992L60.3082 69.8443Z" fill="#901010" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+<path d="M91.689 143.298L95.7813 138.158L91.4437 133.016L87.4031 137.809L91.689 143.298Z" fill="#901010" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+</g>
+<g id="Spades" vectornator:layerName="Spades" visibility="hidden">
+<path d="M30.0043 40.3513C31.981 40.9711 35.0943 38.2855 31.0814 36.4981C29.2758 35.6938 27.8214 32.9186 27.8214 32.9186C27.8214 32.9186 26.1273 35.511 24.582 36.7266C21.2262 39.3665 24.9873 40.7056 26.1171 40.4034C27.6229 40.0006 27.9105 40.4104 26.9808 41.0464C26.0511 41.6824 24.4071 43.2132 24.4071 43.2132L31.0662 43.1082C31.0662 43.1082 30.1357 41.7824 29.2676 41.1484C28.3995 40.5144 28.4617 39.8676 30.0043 40.3513Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M68.3461 93.5768C76.4052 95.9851 89.0989 85.5504 72.7378 78.6052C65.3759 75.4802 59.4458 64.6969 59.4458 64.6969C59.4458 64.6969 52.5386 74.77 46.2384 79.493C32.556 89.7503 47.8907 94.9536 52.4972 93.7793C58.6367 92.2143 59.809 93.8065 56.0185 96.2777C52.228 98.7489 45.525 104.697 45.525 104.697L72.6757 104.289C72.6757 104.289 68.8819 99.1374 65.3424 96.6741C61.8028 94.2107 62.0565 91.6973 68.3461 93.5768Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+<path d="M89.6758 136.818C87.6992 136.198 84.5859 138.884 88.5987 140.671C90.4044 141.476 91.8588 144.251 91.8588 144.251C91.8588 144.251 93.5529 141.658 95.0981 140.443C98.454 137.803 94.6929 136.464 93.5631 136.766C92.0572 137.169 91.7697 136.759 92.6994 136.123C93.6291 135.487 95.2731 133.956 95.2731 133.956L88.6139 134.061C88.6139 134.061 89.5444 135.387 90.4126 136.021C91.2807 136.655 91.2185 137.302 89.6758 136.818Z" fill="#000000" fill-rule="evenodd" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.2"/>
+</g>
+</svg>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .Header-text {
+      text-align: center;
+      font-size: larger;
+    }
+    .Center-div {
+      border-style: double;
+    }
+    .card-size {
+      width: 25%;
+      height: 25%;
+      
+    }
+    .table-size {
+      z-index: -1;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+    .canvasViewport {
+      width: 90%;
+      height: 90%;
+      margin: auto;
+    }
+    .viewportAttributes {
+      position: relative;
+      border: 2px;
+      border-style: double;
+    }
+    .playerOnePosition {
+      position: absolute;
+      left: 438px;
+      top: 365px;
+      z-index: 1;
+    }
+    .playerTwoPosition {
+      position: absolute;
+      left: 570px;
+      top: 365px;
+      z-index: 1;
+    }
+    .discardPosition {
+      position: absolute;
+      left: 762px;
+      top: 235px;
+      z-index: 1;
+    }
+    .houseOnePosition {
+      position: absolute;
+      left: 438px;
+      top: 114px;
+      z-index: 1;
+    }
+    .houseTwoPosition {
+      position: absolute;
+      left: 570px;
+      top: 110px;
+      z-index: 1;
+    }
+    .deal-position {
+      position: absolute;
+      left: 248px;
+      top: 235px;
+      z-index: 1;
+    }
+
+    canvas {
+      border: 1px solid #d3d3d3;
+      background-color: #f1f1f1;
+    }
+  </style>
+  <header class="Header-text">
+    <h1>Black Java</h1>
+    <div class="Center-div">
+      <button onclick="buildDeck()" disabled="true">Build Deck</button>
+      <button id="data-shuffleButton" onclick="shuffle()">Shuffle</button>
+      <button id="data-dealButton" disabled="true" onclick="deal()">
+        Deal
+      </button>
+      <button id="data-hitButton" disabled="true" onclick="hit()">Hit</button>
+      <button id="data-stayButton" disabled="true" onclick="stay()">
+        Stay
+      </button>
+      <button id='data-printDeck' onclick="printDeck()" disabled="true">Heres whats in the deck!</button>
+      <button onclick="drawCard()" disabled="true">Draw</button>
+    </div>
+  </header>
+  <body>
+    <script src="blackJava.js"></script>
+    <script>
+      function printMousePos(event) {
+        console.log("X:" + event.offsetX);
+        console.log("Y:" + event.offsetY);
+      }
+    </script>
+<div>
+  <h2>GUI is under construction</h2>
+  <p>
+    Use developer tools console to view working content. Basic functionality is present and will be updated as new features are implemented.
+  </p>
+</div>
+    <div
+      id="viewport"
+      class="viewportAttributes"
+      onclick="printMousePos(event)"
+    >
+    <img
+        id="aceHearts"
+        src="images/Final/Ace_hearts.svg"
+        class="card-size houseTwoPosition"
+      />
+      <img
+        id="cardBack"
+        name="cardBack"
+        usemap="#deal"
+        src="images/Final/Card_back.svg"
+        class="card-size deal-position"
+      />
+      <img
+        src="images/Final/Table.svg"
+        class="table-size"
+        id="tableImage"
+        usemap="#table"
+      />
+      <map name="deal">
+        <area name="deal" shape="default" onclick="deal()"/>
+      </map>
+      <map name="table">
+        <area
+          name="deal"
+          shape="rect"
+          coords="250, 245, 327, 385"
+          onclick="helloWorld()"
+        />
+      </map>
+    </div>
+
+    <!-- <div id="tableCanvas" style="position: absolute" class="viewportAttributes">
+      table
+    </div> -->
+
+    <p id="deck">Test</p>
+  </body>
+</html>
