@@ -1,4 +1,5 @@
 //Welcome to blackJava, black jack in javascript
+
 const cards = ["Ace", 2, 3, 4, 5, 6, 7, 8, 9, "Jack", "Queen", "King"];
 const hearts = [];
 const spades = [];
@@ -57,51 +58,32 @@ deal = () => {
   document.getElementById("data-hitButton").disabled = false;
   document.getElementById("data-stayButton").disabled = false;
   document.getElementById("data-dealButton").disabled = true;
-  check();
+  
+ evaluateHand(playerHand);
+ evaluateHand(houseHand);
 };
 
 hit = () => {
   playerSum = 0;
   playerHand.push(deck.pop());
   console.log("Player Card: " + playerHand[playerHand.length]);
-  check();
+  evaluateHand(playerHand);
 };
 
 stay = () => {
   document.getElementById("data-hitButton").disabled = true;
   document.getElementById("data-stayButton").disabled = true;
   document.getElementById("data-dealButton").disabled = true;
-  let counter = 0;
   while (houseSum < 17) {
     if (houseSum >= 17) {
       return evaluate();
     }
     houseHand.push(deck.pop());
-    while (counter < houseHand.length) {
-      let firstCharacter = parseInt(houseHand[counter].charAt(0));
-
-      switch (houseHand[counter].charAt(0)) {
-        case "A":
-          houseSum += 1;
-          break;
-        case "J":
-          houseSum += 10;
-          break;
-        case "Q":
-          houseSum += 10;
-          break;
-        case "K":
-          houseSum += 10;
-          break;
-        default:
-          houseSum += firstCharacter;
-          break;
-      }
-      counter++;
+    houseSum += characterChecker(houseHand.length);
     }
     console.log(houseHand);
     console.log(houseSum);
-  }
+  
   if (houseSum > 21) {
     console.log("HOUSE BUST!");
     console.log("YOU WIN!");
@@ -109,32 +91,48 @@ stay = () => {
   } else {
     evaluate();
   }
+  };
+
+characterChecker = (character) => {
+  switch (character) {
+      case "A":
+        return 1;
+      case "J":
+        return 10;
+      case "Q":
+        return 10
+      case "K":
+        return 10;
+      default:
+        return parseInt(character);
+    }
 };
 
-check = () => {
+evaluateHand = (targetHand) => {
   let counter = 0;
-  while (counter < playerHand.length) {
-    let firstCharacter = parseInt(playerHand[counter].charAt(0));
-
-    switch (playerHand[counter].charAt(0)) {
-      case "A":
-        playerSum += 1;
-        break;
-      case "J":
-        playerSum += 10;
-        break;
-      case "Q":
-        playerSum += 10;
-        break;
-      case "K":
-        playerSum += 10;
-        break;
-      default:
-        playerSum += firstCharacter;
-        break;
+  while (counter < targetHand.length) {
+    let firstCharacter = targetHand[counter].charAt(0);
+    if (targetHand == playerHand) {
+      playerSum +=  characterChecker(firstCharacter);
     }
-    counter++;
-  }
+    if (targetHand == houseHand) {
+      houseSum += characterChecker(firstCharacter);
+    }
+    
+counter ++
+}
+checkPlayer();
+printHands();
+};
+
+printHands = () => {
+  console.log(`You have ${playerHand.join(' and ')} in your hand.`);
+  console.log(`You: ${playerSum}`);
+  console.log(`The house has ${houseHand.join(' and ')}`);
+  console.log(`House: ${houseSum}`)
+}
+
+checkPlayer = () => {
   if (playerSum > 21) {
     console.log("YOU BUST!");
     document.getElementById("data-hitButton").disabled = true;
@@ -145,11 +143,8 @@ check = () => {
     console.log("BLACKJACK!");
     stay();
   }
-  console.log(`You have ${playerHand.join(' and ')} in your hand.`);
-  console.log(`You: ${playerSum}`);
-  console.log(`The house has ${houseHand}`);
-  console.log(`House: ${houseSum}`)
-};
+
+}
 
 clearHand = (target) => {
   playerSum = 0;
@@ -277,5 +272,3 @@ checkDeck = () => {
     }
   }
 };
-
-
