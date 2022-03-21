@@ -10,30 +10,22 @@ const playerHand = [];
 const houseHand = [];
 let playerSum = 0;
 let houseSum = 0;
-
-buildDeck = () => {
-  let counter = 0;
-  while (counter < cards.length) {
-    hearts.push(cards[counter]);
-    spades.push(cards[counter]);
-    diamonds.push(cards[counter]);
-    clubs.push(cards[counter]);
-    counter++;
-  }
-  printCards();
-};
+let houseWins = 0;
+let playerWins = 0;
 
 shuffle = () => {
+  console.log('SHUFFLE')
   buildDeck();
   while (hearts.length + spades.length + diamonds.length + clubs.length > 0) {
     pickSuit();
   }
-  document.getElementById('data-printDeck').disabled = false;
+  document.getElementById("data-printDeck").disabled = false;
   document.getElementById("data-dealButton").disabled = false;
   document.getElementById("data-shuffleButton").disabled = true;
 };
 
 deal = () => {
+  console.log('DEAL')
   clearHand(playerHand);
   clearHand(houseHand);
   if (deck.length < 7) {
@@ -49,123 +41,157 @@ deal = () => {
     console.log("House Card: " + houseHand[i]);
     i++;
   }
+  //#region Experimental GUI
   var tableDiv = document.getElementById("viewport");
   var card1 = document.createElement("img");
   card1.src = "Images/Final/Ace_hearts.svg";
   card1.className = "card-size playerOnePosition";
   tableDiv.appendChild(card1);
+  //#endregion
 
   document.getElementById("data-hitButton").disabled = false;
   document.getElementById("data-stayButton").disabled = false;
   document.getElementById("data-dealButton").disabled = true;
-  
- evaluateHand(playerHand);
- evaluateHand(houseHand);
+
+  addHand(playerHand);
+  addHand(houseHand);
 };
 
 hit = () => {
+  console.log('HIT')
   playerSum = 0;
   playerHand.push(deck.pop());
-  console.log("Player Card: " + playerHand[playerHand.length]);
-  evaluateHand(playerHand);
+  console.log(`You were dealt ${playerHand[playerHand.length - 1]}`);
+  addHand(playerHand);
+};
+
+addHand = (targetHand) => {
+  console.log('ADD HAND')
+  let counter = 0;
+  switch (targetHand) {
+    case playerHand:
+      while (counter < playerHand.length) {
+        let firstCharacter = playerHand[counter].charAt(0);
+        playerSum += characterChecker(firstCharacter);
+        checkPlayer();
+        counter++;
+      }
+      printHand(playerHand);
+      break
+    case houseHand:
+      while (counter < houseHand.length) {
+        let firstCharacter = houseHand[counter].charAt(0);
+        houseSum += characterChecker(firstCharacter);
+        checkHouse();
+        counter++;
+      }
+      printHand(houseHand);
+      break
+  }
 };
 
 stay = () => {
+  console.log('STAY')
   document.getElementById("data-hitButton").disabled = true;
   document.getElementById("data-stayButton").disabled = true;
   document.getElementById("data-dealButton").disabled = true;
   while (houseSum < 17) {
-    if (houseSum >= 17) {
-      return evaluate();
-    }
-    houseHand.push(deck.pop());
-    houseSum += characterChecker(houseHand.length);
-    }
-    console.log(houseHand);
-    console.log(houseSum);
-  
-  if (houseSum > 21) {
-    console.log("HOUSE BUST!");
-    console.log("YOU WIN!");
-    document.getElementById("data-dealButton").disabled = false;
-  } else {
-    evaluate();
+    houseHit();
   }
-  };
-
-characterChecker = (character) => {
-  switch (character) {
-      case "A":
-        return 1;
-      case "J":
-        return 10;
-      case "Q":
-        return 10
-      case "K":
-        return 10;
-      default:
-        return parseInt(character);
-    }
 };
 
-evaluateHand = (targetHand) => {
-  let counter = 0;
-  while (counter < targetHand.length) {
-    let firstCharacter = targetHand[counter].charAt(0);
-    if (targetHand == playerHand) {
-      playerSum +=  characterChecker(firstCharacter);
-    }
-    if (targetHand == houseHand) {
-      houseSum += characterChecker(firstCharacter);
-    }
-    
-counter ++
-}
-checkPlayer();
-printHands();
+houseHit = () => {
+  console.log('HOUSE HIT')
+  houseHand.push(deck.pop());
+  houseSum += characterChecker(houseHand.length - 1);
+  console.log(houseHand);
+  console.log(houseSum);
+  checkHouse();
 };
-
-printHands = () => {
-  console.log(`You have ${playerHand.join(' and ')} in your hand.`);
-  console.log(`You: ${playerSum}`);
-  console.log(`The house has ${houseHand.join(' and ')}`);
-  console.log(`House: ${houseSum}`)
-}
 
 checkPlayer = () => {
+  console.log('CHECK PLAYER')
   if (playerSum > 21) {
-    console.log("YOU BUST!");
     document.getElementById("data-hitButton").disabled = true;
     document.getElementById("data-stayButton").disabled = true;
     document.getElementById("data-dealButton").disabled = false;
+    evaluate("playerBust");
   }
   if (playerSum == 21) {
-    console.log("BLACKJACK!");
-    stay();
-  }
-
-}
-
-clearHand = (target) => {
-  playerSum = 0;
-  houseSum = 0;
-  let counter = target.length;
-  while (counter >= 0) {
-    target.pop();
-    counter--;
+    evaluate("playerBJ");
   }
 };
 
-evaluate = () => {
+checkHouse = () => {
+  console.log('CHECK HOUSE')
+  if (houseSum > 21) {
+    document.getElementById("data-hitButton").disabled = true;
+    document.getElementById("data-stayButton").disabled = true;
+    document.getElementById("data-dealButton").disabled = false;
+    evaluate("houseBust");
+  }
+  if (houseSum == 21) {
+    document.getElementById("data-hitButton").disabled = true;
+    document.getElementById("data-stayButton").disabled = true;
+    document.getElementById("data-dealButton").disabled = false;
+    evaluate("houseBJ");
+  }
+  if (houseSum >= 17) {
+    evaluate();
+  }
+};
+
+evaluate = (situation) => {
+  console.log('EVALUATE')
   console.log("Your hand totals " + playerSum);
   console.log("House hand totals " + houseSum);
-  if (playerSum > houseSum) {
-    console.log("YOU WIN!");
-  } else {
-    console.log("HOUSE WINS!");
+  switch (situation) {
+    case "playerBust":
+      houseWins += 1;
+      console.log("You bust!");
+      break
+    case "houseBust":
+      playerWins += 1;
+      console.log("House bust!");
+      break
+    case "playerBJ":
+      playerWins += 1;
+      console.log("You hit BLACKJACK!");
+      console.log('You WIN!')
+      break
+    case "houseBJ":
+      houseWins += 1;
+      console.log("House hit BLACKJACK!");
+      break
+    default:
+      if (houseSum >= playerSum) {
+        houseWins += 1;
+        console.log("House WINS!");
+      } else {
+        playerWins += 1;
+        console.log("You WIN!");
+      }
   }
+
+  console.log(`House Wins: ${houseWins}`);
+  console.log(`Player Wins: ${playerWins}`);
+  document.getElementById("playerWinsP").innerText = playerWins;
+  document.getElementById("houseWinsP").innerText = houseWins;
   document.getElementById("data-dealButton").disabled = false;
   checkDeck();
+};
+
+//#region Deck functions
+buildDeck = () => {
+  let counter = 0;
+  while (counter < cards.length) {
+    hearts.push(cards[counter]);
+    spades.push(cards[counter]);
+    diamonds.push(cards[counter]);
+    clubs.push(cards[counter]);
+    counter++;
+  }
+  printCards();
 };
 
 pickSuit = () => {
@@ -234,31 +260,6 @@ printCards = () => {
   console.log("Clubs:" + clubs);
 };
 
-printDeck = () => {
-  document.getElementById("deck").innerHTML = deck;
-  var aceIMG = document.createElement("img");
-  aceIMG.setAttribute("src", "Images/Final/Ace of Hearts.svg");
-  aceIMG.setAttribute("class", "card-size");
-  var getCardBody = document.getElementById("card");
-  getCardBody.appendChild(aceIMG);
-
-  var deckImage = [getImage("aceHearts")];
-  displayDeck(getCardBody, deckImage);
-  calulatePieChart();
-};
-
-getImage = (imageID) => {
-  var image = document.createElement("img");
-  image.id(imageID);
-  return image;
-};
-
-displayDeck = (parent, child) => {
-  child.forEach((element) => {
-    parent.appendChild(element);
-  });
-};
-
 checkDeck = () => {
   if (deck.length > 0) {
     if (deck.length <= 7) {
@@ -272,3 +273,73 @@ checkDeck = () => {
     }
   }
 };
+//#endregion
+
+//#region Hand functions
+
+clearHand = (target) => {
+  playerSum = 0;
+  houseSum = 0;
+  let counter = target.length;
+  while (counter >= 0) {
+    target.pop();
+    counter--;
+  }
+};
+
+characterChecker = (character) => {
+  switch (character) {
+    case "A":
+      return 1;
+    case "J":
+      return 10;
+    case "Q":
+      return 10;
+    case "K":
+      return 10;
+    default:
+      return parseInt(character);
+  }
+};
+
+printHand = (targetHand) => {
+  switch (targetHand) {
+    case playerHand:
+      console.log(`You have ${playerHand.join(" and ")} in your hand.`);
+      console.log(`You: ${playerSum}`);
+      break
+    case houseHand:
+      console.log(`The house has ${houseHand.join(" and ")}`);
+      console.log(`House: ${houseSum}`);
+      break
+  }
+};
+
+//#endregion
+
+//#region Experimental functions
+getImage = (imageID) => {
+  var image = document.createElement("img");
+  image.id(imageID);
+  return image;
+};
+
+displayDeck = (parent, child) => {
+  child.forEach((element) => {
+    parent.appendChild(element);
+  });
+};
+
+printDeck = () => {
+  document.getElementById("deck").innerHTML = deck;
+  var aceIMG = document.createElement("img");
+  aceIMG.setAttribute("src", "Images/Final/Ace of Hearts.svg");
+  aceIMG.setAttribute("class", "card-size");
+  var getCardBody = document.getElementById("card");
+  getCardBody.appendChild(aceIMG);
+
+  var deckImage = [getImage("aceHearts")];
+  displayDeck(getCardBody, deckImage);
+  calulatePieChart();
+};
+//#endregion
