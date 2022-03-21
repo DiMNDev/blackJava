@@ -98,6 +98,9 @@ stay = () => {
   while (houseSum < 17) {
     houseHit();
   }
+  if (houseSum >= 17) {
+    evaluate();
+  }
 };
 
 houseHit = () => {
@@ -136,9 +139,7 @@ checkHouse = () => {
     document.getElementById("data-dealButton").disabled = false;
     evaluate("houseBJ");
   }
-  if (houseSum >= 17) {
-    evaluate();
-  }
+
 };
 
 evaluate = (situation) => {
@@ -178,6 +179,8 @@ evaluate = (situation) => {
   document.getElementById("playerWinsP").innerText = playerWins;
   document.getElementById("houseWinsP").innerText = houseWins;
   document.getElementById("data-dealButton").disabled = false;
+  document.getElementById('data-hitButton').disabled = true;
+  document.getElementById('data-stayButton').disabled = true;
   checkDeck();
 };
 
